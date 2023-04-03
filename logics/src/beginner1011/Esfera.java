@@ -10,6 +10,12 @@ public class Esfera {
 		 * assumem que o resultado da divisão entre dois inteiros é outro inteiro.
 		 */
 		Scanner input = new Scanner(System.in);
+		double pi = 3.14159;
+		double raio = input.nextDouble();
+		
+		double volume = (4.0/3)*pi*(Math.pow(raio,3));
+		
+		System.out.printf("VOLUME = %.3f%n",volume);
 		
 		input.close();
 	}
