@@ -15,7 +15,11 @@ public class Distancia_carros {
 		
 		try {
 			Scanner input = new Scanner(System.in);
+			int km = input.nextInt();
 			
+			int min = km*2;
+			
+			System.out.println(min+" minutos");
 			input.close();
 		}catch(ArithmeticException e) {
 			System.out.println(e.getMessage());
