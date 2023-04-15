@@ -12,12 +12,16 @@ public class ConversaoTempo {
 		
 		int tempo = input.nextInt();
 		
-		int horas = tempo/60;
-		int minutos =  tempo%60;
-		int segundos = minutos%60;
+		int horas = tempo/3600;
+		tempo = tempo%3600;
+		
+		int minutos =  tempo/60;
+		tempo = tempo%60;
+		
+		int segundos = tempo;
 		
 		
-		System.out.printf("%d:%d:%d",horas,minutos,segundos);
+		System.out.printf("%d:%d:%d%n",horas,minutos,segundos);
 		
 		input.close();
 	}
