@@ -15,6 +15,24 @@ public class Teste_Selecao {
 		int B = input.nextInt();
 		int C = input.nextInt();
 		int D = input.nextInt();
+		
+		if(B>C && D>A) {
+			if((C+D)>(A+B)) {
+				if(C>=0 && D>=0) {
+					if(A%2==0) {
+						System.out.println("Valores aceitos");
+					}else {
+						System.out.println("Valores nao aceitos");
+						}
+				}else { 
+					System.out.println("Valores nao aceitos");
+					}
+			}else { 
+				System.out.println("Valores nao aceitos");
+				}
+		}else { 
+			System.out.println("Valores nao aceitos");
+			}
 		input.close();
 	}
 }
