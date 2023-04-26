@@ -18,13 +18,15 @@ public class Intervalo {
 		
 		try {
 			if(intervalo >=0 && intervalo <= 25.00000) {
-				
-			}
-			if(intervalo >=25.00001 && intervalo <=50.00000) {
-				
-			}
-			if(intervalo >=50.00001 && ) {
-				
+				System.out.println("Intervalo [0,25]");
+			}else if(intervalo >=25.00001 && intervalo <=50.00000) {
+				System.out.println("Intervalo (25,50]");
+			}else if(intervalo >=50.00001 && intervalo <=75.00000 ) {
+				System.out.println("Intervalo (50,75]");
+			}else if(intervalo >=75.00001 && intervalo <= 100) {
+				System.out.println("Intervalo (75,100]");
+			}else {
+				System.out.println("Fora de intervalo");
 			}
 		}catch(ArithmeticException e) {
 			System.out.println(e.getMessage());
