@@ -9,7 +9,7 @@ public class MediaAluno {
 		double n3 = input.nextDouble();
 		double n4 = input.nextDouble();
 		
-		double media = ((n1*2)+(n2*3)+(n3*4)+(n4*1))/(4+4);
+		double media = ((n1*2)+(n2*3)+(n3*4)+(n4*1))/10;
 		
 		System.out.printf("Media: %.1f%n", media);
 		if(media>=7.0) {
