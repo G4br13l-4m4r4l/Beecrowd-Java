@@ -12,7 +12,11 @@ public class Multiplos {
 		int A = input.nextInt();
 		int B = input.nextInt();
 		
-		
+		if(B%A == 0 || A%B == 0) {
+			System.out.println("Sao Multiplos");
+		}else {
+			System.out.println("Nao sao Multiplos");
+		}
 		input.close();
 	}
 }
