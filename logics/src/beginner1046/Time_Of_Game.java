@@ -12,8 +12,14 @@ public class Time_Of_Game {
 		Scanner input = new Scanner(System.in);
 		int inicio = input.nextInt();
 		int fim = input.nextInt();
+		int duracao;
+		if(inicio >= fim) {
+			duracao = (24+fim)-inicio;
+		}else {
+			duracao = fim-inicio;
+		}
 		
-		
+		System.out.printf("O JOGO DUROU %d HORA(S)%n",duracao);
 		input.close();
 	}
 }
