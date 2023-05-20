@@ -19,7 +19,7 @@ public class Numeros_Positivos {
 			int cont =0;
 			int[] lista = {a,b,c,d,e,f};
 			
-			for(int x = 0; x<=lista.length;x++ ) {
+			for(int x = 0; x<lista.length;x++ ) {
 				if(lista[x]>=0) {
 					cont++;
 				}
