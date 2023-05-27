@@ -1,5 +1,7 @@
 package beginner1061;
 
+import java.util.Scanner;
+
 public class Tempo_de_Evento {
 	public static void main(String[] args) {
 		/**
@@ -11,6 +13,15 @@ public class Tempo_de_Evento {
 		 * você deverá ajudar Pedrinho a calcular a duração deste evento.
 		 */
 		
+		Scanner input = new Scanner(System.in);
+		String di[] = input.nextLine().split(" ");
+		String hi[] = input.nextLine().replaceAll(" ","").split(":");
+		String df[] = input.nextLine().split(" ");
+		String hf[] = input.nextLine().replaceAll(" ","").split(":");
 		
+		int d1 = Integer.parseInt(di[1]);
+		int h1 = Integer.parseInt(hi[1]);
+		int s1 = Integer.parseInt(hi[2]);
+		input.close();
 	}
 }
